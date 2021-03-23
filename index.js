@@ -27,8 +27,8 @@ window.addEventListener('load', () => {
           locationTimezone.textContent = location
           const icon = data.weather[0].icon
           let iconLink = document.querySelector("link[rel~='icon']")
-          iconLink.href = `http://openweathermap.org/img/wn/${icon}@4x.png`
-          document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${icon}@4x.png`
+          iconLink.href = `https://openweathermap.org/img/wn/${icon}@4x.png`
+          document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${icon}@4x.png`
 
           temperatureSection.addEventListener('click', () => {
             if (temperatureSpan.textContent === 'F') {
