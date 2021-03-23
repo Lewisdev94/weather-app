@@ -2,17 +2,22 @@
 <html>
   <head>
     <title>Weather App</title>
+    <link rel="icon" type="image/jpg" href="" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="location">
       <h1 class="location-timezone">Timezone</h1>
-      <p>Icon</p>
+      <img id="weather-icon" src="" alt="image" />
     </div>
     <div class="temperature">
-      <h2 class="temperature-degree">34</h2>
-      <div class="temperature-description">It's cold!</div>
+      <div class="degree-section">
+        <h2 class="deg-num">34</h2>
+        <span class="deg-letter">F</span>
+        <div class="temperature-description">It's cold!</div>
+      </div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
