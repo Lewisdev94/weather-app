@@ -1,0 +1,8 @@
+/* ==== GLOBAL STYLES ==== */
+/* * styles everything on the page. Border-box includes border and padding within the total width or height. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
