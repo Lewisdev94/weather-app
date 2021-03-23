@@ -16,6 +16,8 @@ Not yet hosted
 
 ## Future Improvements
 
+## Completed Improvements
+
 
 ## Creators
 
