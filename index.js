@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
 
           // Dynamic tab name
 
-          document.title = `${weatherType} - ${temperatureC}`
+          document.title = `${weatherType} - ${temperatureC}C`
 
           // units change
           temperatureSection.addEventListener('click', () => {
