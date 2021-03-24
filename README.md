@@ -18,21 +18,26 @@ Not yet hosted
 
 ## Future Improvements
 
-- Add current date and time
-- Remove CORS proxy for production release
-- Change Open Weather calls to https (why is the default http?)
+- Remove CORS proxy for production release. (This will be kept in place for ease of local server development)
 - Make location request a user action 
-- Dynamically change the favicon to match the weather icon given
-- Dynamically change page title to match Location and/or weather type
 - Make app mobile responsive
 - Make gradient background dynamic based on time of day
 - Provide error messaging for the weather API
 - Provide error messaging if a location isn't provided to the app from the browser (option for manual input?)
 - Ask for a name to be stored within cookies for a personalised page on each load
 - Add placeholder information and icon for when the API is slow to load
+- Auto refresh the page after 15(?)minutes for an updated weather report. How does this work with the current function on page load?
+
+
 
 ## Completed Improvements
 
+- Default favicon now displays before the API call is complete. Safari will continue to show the default due to lack of dynamic favicon changes, other browsers will update dynamically. Chrome and Firefox tested and working. (23/03/2021)
+- Changed all API fetches to https. (23/03/2021)
+- Current date and time code built in JS. (24/03/2021)
+- Added welcome message with variable text depending on time of day (Good morning/afternoon/evening etc). (24/03/2021)
+- Added a dynamically changing page title. Shows the basic weather summary and the degrees. Degrees change dynamically depending if C or F are selected on screen. (24/03/2021)
+- Added sunrise and sunset data. Data converted from unix time into standard 24HR clock time. (24/03/2021)
 
 ## Creators
 

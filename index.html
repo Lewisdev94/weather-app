@@ -6,15 +6,28 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="location">
-      <h1 class="location-timezone">Timezone</h1>
-      <img id="weather-icon" src="" alt="image" />
-    </div>
-    <div class="temperature">
-      <div class="degree-section">
-        <h2 class="deg-num">34</h2>
-        <span class="deg-letter">F</span>
-        <div class="temperature-description">It's cold!</div>
+    <div class="container">
+      <div class="date-time">
+        <span id="time"></span>
+        <span id="date"></span>
+      </div>
+      <div class="welcome-msg-section">
+        <span class="welcome-msg"></span>
+      </div>
+      <div class="location">
+        <h1 class="location-timezone">Location</h1>
+        <img id="weather-icon" src="images/default_icon.png" alt="image" />
+      </div>
+      <div class="temperature">
+        <div class="degree-section">
+          <h2 class="deg-num">00</h2>
+          <span class="deg-letter">C</span>
+          <div class="temperature-description">summary</div>
+        </div>
+      </div>
+      <div class="sunrise-set">
+        <span class="sunrise">Sunrise: 00:00:00</span>
+        <span class="sunset">Sunset: 00:00:00</span>
       </div>
     </div>
 

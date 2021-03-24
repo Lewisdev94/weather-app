@@ -9,16 +9,21 @@
 
 body {
   height: 100vh;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  font-family: sans-serif;
+  color: #fff;
+  border: red solid 1px;
+}
+
+/* ==== LAYOUT ==== */
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-  font-family: sans-serif;
-  color: #fff;
+  border: red solid 1px;
 }
-
-/* ==== LAYOUT ==== */
 
 .location,
 .temperature {
@@ -27,6 +32,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: red solid 1px;
 }
 
 .temperature {
@@ -46,4 +52,10 @@ body {
 
 .degree-section h2 {
   font-size: 40px;
+}
+
+/* Date and Time */
+
+#date {
+  text-transform: capitalize;
 }
