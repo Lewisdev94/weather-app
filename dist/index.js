@@ -3,9 +3,6 @@
 window.addEventListener('load', async () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(async position => {
-      // const proxy = 'https://cors-anywhere.herokuapp.com/'
-      // const api = `${proxy}https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=4b8e9915d09b743689f7b97820c35c67`
-
       const urlDataObj = {
         long: position.coords.longitude,
         lat: position.coords.latitude
