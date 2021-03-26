@@ -1,4 +1,6 @@
 // load - the event is after the page loads
+import WEATHER_API_KEY from './apikey.js'
+
 window.addEventListener('load', () => {
   let long
   let lat
@@ -14,7 +16,8 @@ window.addEventListener('load', () => {
       lat = position.coords.latitude
       // const proxy = 'https://cors-anywhere.herokuapp.com/'
       // const api = `${proxy}https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=4b8e9915d09b743689f7b97820c35c67`
-      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=4b8e9915d09b743689f7b97820c35c67`
+      const weatherAPI = WEATHER_API_KEY
+      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=`
       fetch(api)
         .then(response => {
           return response.json()
