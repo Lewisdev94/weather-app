@@ -157,6 +157,7 @@ function weatherFunc (data) {
   function morningTheme () {
     document.querySelector('.sunrise-set-section').classList.add('sunrise-set-section-black')
     document.querySelector('.container').classList.add('black', 'morning')
+    document.body.classList.add('morning')
     if (temperatureC >= 16) {
       document.querySelector('.temperature-section').classList.add('temperature-section-morning-hot')
     } else {
@@ -166,6 +167,7 @@ function weatherFunc (data) {
 
   function afternoonTheme () {
     document.querySelector('.container').classList.add('white', 'afternoon')
+    document.body.classList.add('afternoon')
     if (temperatureC >= 16) {
       document.querySelector('.temperature-section').classList.add('temperature-section-afternoon-hot')
     } else {
@@ -174,6 +176,7 @@ function weatherFunc (data) {
   }
   function eveningTheme () {
     document.querySelector('.container').classList.add('white', 'evening')
+    document.body.classList.add('evening')
     if (temperatureC >= 16) {
       document.querySelector('.temperature-section').classList.add('temperature-section-evening-hot')
     } else {

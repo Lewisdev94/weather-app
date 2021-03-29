@@ -33,6 +33,7 @@ Site is live [here](https://lewisdev94-weather-app.netlify.app/), hosted on Netl
 
 ## Completed Improvements
 
+- png icon drop shadow. Some colour combinations clashed. (29/03/2021)
 - Placeholders provided for all data fields for when the API is slow. (29/03/2021)
 - Background changes depending on the local time of day. (29/03/2021)
 - CORS proxy removed. No longer needed on dev or production. (26/03/2021)

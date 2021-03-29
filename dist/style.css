@@ -8,10 +8,12 @@
 }
 
 body {
-  background: #276aae;
   font-family: Lato, sans-serif;
   color: #fff;
+  background: #276aae;
   height: 100vh;
+  display: flex;
+  font-size: 1rem;
 }
 
 /* ==== LAYOUT ==== */
@@ -19,19 +21,21 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 8rem auto 8rem;
+  max-width: 92%;
 }
 
 /* MESSAGE */
 
 .welcome-msg-section {
-  margin-top: 5vh;
   text-align: center;
-  font-size: 1rem;
-  line-height: 20px;
+  font-size: 1.25em;
+  line-height: 25px;
   font-weight: 500;
+
+  margin-bottom: 4rem;
 }
 
 /* TEMPERATURE */
@@ -44,15 +48,16 @@ body {
   background-image: linear-gradient(#276aae, #276aae), linear-gradient(135deg, #ffac73, #e36469);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  min-height: 4em;
-  width: 4em;
+  min-height: 11rem;
+  width: 11rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: 500;
   cursor: pointer;
-  margin: -1vh 0 -4vh;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  margin-bottom: 1.5rem;
 }
 
 /* THEME CHANGE */
@@ -109,15 +114,16 @@ body {
   align-items: center;
   text-transform: capitalize;
   flex-wrap: wrap;
-  font-size: 1rem;
+  font-size: 1.125em;
   font-weight: 400;
-
   padding-right: 0.65em;
+  margin-bottom: 3.5rem;
 }
 
 .description-section img {
   height: 44px;
   width: 44px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 /* SUNRISE */
@@ -125,13 +131,19 @@ body {
 .sunrise-set-section {
   display: flex;
   border-bottom: 1px #fff solid;
+  font-size: 1.125em;
 
-  margin-bottom: 8vh;
-  padding: 0 0.125em 0.5em 0.125em;
+  justify-content: space-between;
+
+  padding: 0 0.3rem 0.5rem;
 }
 
 .sunrise-set-section-black {
   border-bottom: 1px #000 solid;
+}
+
+.sunrise {
+  padding-bottom: 0.4rem;
 }
 
 .label,
@@ -160,12 +172,40 @@ body {
 }
 
 .location-timezone {
-  font-size: 2rem;
+  font-size: 2em;
+  font-weight: 500;
   line-height: 48px;
 }
 
 .date-display {
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.125em;
   font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.bottom-flex {
+  display: flex;
+  flex-direction: column;
+}
+.icon-sunrise-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-device-height: 570px) {
+  .container {
+    margin: 1rem auto 1rem;
+  }
+  .welcome-msg-section {
+    margin-bottom: 2rem;
+  }
+  .description-section {
+    margin-bottom: 2rem;
+  }
+
+  .temperature-section {
+    min-height: 8rem;
+    width: 8rem;
+  }
 }
