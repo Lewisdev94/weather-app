@@ -23,6 +23,7 @@ window.addEventListener('load', async () => {
 })
 
 function weatherFunc (data) {
+  console.log(data)
   let temperatureDescription = document.querySelector('.temperature-description')
   let degreeNumber = document.querySelector('.deg-num')
   let locationTimezone = document.querySelector('.location-timezone')

@@ -22,8 +22,7 @@ Site is live [here](https://lewisdev94-weather-app.netlify.app/), hosted on Netl
 
 - Work out a new way to do the gradient ring. Causing issues for a clean theme change.
 - Make location request a user action 
-- Make app mobile responsive
-- Make background dynamic based on time of day
+- Make app fully mobile responsive
 - Provide error messaging for the weather API
 - Provide error messaging if a location isn't provided to the app from the browser (option for manual input?)
 - Ask for a name to be stored within cookies for a personalised page on each load
