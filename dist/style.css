@@ -187,13 +187,14 @@ body {
 .bottom-flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .icon-sunrise-flex {
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (min-device-height: 630px) {
+@media screen and (min-device-height: 641px) {
   .container {
     margin: 8rem auto 8rem;
   }
