@@ -194,7 +194,7 @@ body {
   flex-direction: column;
 }
 
-@media screen and (min-device-height: 641px) {
+@media screen and (min-height: 641px) {
   .container {
     margin: 8rem auto 8rem;
   }
